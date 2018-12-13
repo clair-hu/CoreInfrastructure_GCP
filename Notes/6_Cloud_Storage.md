@@ -59,4 +59,27 @@ If you need **finer** control, you can create **access control lists ACLs**.
 ### ACL
 consisits of two information
 * **scope** - defines who can perform the specified actions.
-* **permission** - defines what actions can be performed.
+* **permission** - defines what actions can be performed. (For example, read or write)
+
+----
+Remember Cloud Storage objects are immutable.
+
+You can turn on **object versioning** on your buckets if you want. 
+
+If you do, 
+* Cloud Storage keeps a history of modifications - It overrides or deletes all of the objects in the bucket.
+* You can list the archived versions of an object, restore an object to an older state or permanently delete a version as needed.
+
+If you don't do,
+* new always overrides old.
+
+----
+## What if versioning sounds good to you but you're worried about junk accumulating?
+
+Answer:
+
+Cloud Storage also offers **life-cycle management policies**.
+
+> For example, you could tell Cloud Storage to delete objects older than 365 days.
+
+> Or you could tell it to delete objects created before January 1, 2013 or keep only the three most recent versions of each object in a bucket that has versioning enabled. 
