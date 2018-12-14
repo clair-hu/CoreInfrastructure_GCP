@@ -47,6 +47,14 @@ When you create a bucket, you give it a globally unique name.
  - Pick a location that minimizes latency for you users. For example, if most of your users are in Europe, you probably want to pick a European location.
 * You choose a default storage class
 
+Quiz question: Your Cloud Storage objects live in buckets. Which of these characteristics do you define on a per-bucket basis? Choose all that are correct (3 correct answers).
+
+1. A default storage class
+
+2. A geographic location
+
+3. A globally-unique name
+
 ----
 ![objects and buckets organization](Images/GCP4.JPG "objects and buckets organization")
 
